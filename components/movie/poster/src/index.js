@@ -34,7 +34,7 @@ export default function MoviePoster({path}) {
     <div className="mv-MoviePoster">
       <AtomImage
         src={`https://image.tmdb.org/t/p/w500${path}`}
-        errorText="Imagen no encontrada"
+        errorText="Not found image"
         errorIcon={<ImageNotFoundIcon />}
       />
     </div>

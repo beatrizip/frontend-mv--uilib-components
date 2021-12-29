@@ -13,7 +13,7 @@ export default function Detail({movie}) {
 
       <div className={`${CLASS_BASE}-content`}>
         <div className={`${CLASS_BASE}-image`}>
-          <MoviePoster path={movie.poster_path} />
+          <MoviePoster path={movie.poster} />
         </div>
         <div className={`${CLASS_BASE}-info`}>
           <div className={`${CLASS_BASE}-resume`}>{movie.overview}</div>
@@ -37,10 +37,10 @@ export default function Detail({movie}) {
             <AtomBadge
               size={atomBadgeSizes.LARGE}
               type={atomBadgeTypes.INFO}
-              label={`${movie.vote_average}`}
+              label={`${movie.rating}`}
             />
             <span className={`${CLASS_BASE}-vote`}>
-              ({movie.vote_count} Votes)
+              ({movie.voteCount} Votes)
             </span>
           </div>
 
