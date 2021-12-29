@@ -1,0 +1,14 @@
+@import '~@s-ui/theme/lib/index';
+@import '~@s-ui/react-atom-icon/lib/index';
+@import '~@s-ui/react-atom-image/lib/index';
+
+.mv-MoviePoster {
+  height: 300px;
+  width: 200px;
+  border-radius: $bdrs-xl;
+  overflow: hidden;
+}
+
+.sui-AtomCard-media {
+  width: auto;
+}

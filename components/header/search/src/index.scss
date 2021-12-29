@@ -1,0 +1,18 @@
+@import '~@s-ui/react-atom-input/lib/index';
+@import '~@s-ui/react-atom-button/lib/index';
+
+.mv-HeaderSearch {
+  &-container {
+    background-color: $c-primary-light-3;
+    border-radius: $bdrs-xl;
+    display: flex;
+    justify-content: center;
+    padding: $p-xxl $p-giant;
+  }
+
+  &-search {
+    margin-right: $m-xl;
+    width: 100%;
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,45 @@
+@import '~@s-ui/react-atom-tag/lib/index';
+@import '~@s-ui/react-atom-badge/lib/index';
+@import '~@s-ui/react-atom-image/lib/index';
+@import '~@s-ui/react-atom-spinner/lib/index';
+@import '~@s-ui/react-layout-grid/lib/index';
+@import '../../../movie/poster/src/index';
+
+.mv-Detail {
+  &-content {
+    display: flex;
+  }
+
+  &-info {
+    background-color: $c-white;
+    border-radius: $bdrs-xl;
+    padding: $p-xxl;
+  }
+
+  &-resume {
+    font-size: $fz-l;
+  }
+
+  &-image {
+    border-radius: $bdrs-xl;
+    margin-right: $m-xl;
+  }
+
+  &-section {
+    align-items: center;
+    background-color: $c-gray-light-4;
+    display: flex;
+    border-radius: $bdrs-xl;
+    padding: $p-m $p-xxl;
+    margin-top: $m-xl;
+
+    .sui-AtomTag {
+      margin-bottom: 0;
+    }
+  }
+
+  &-titleSection {
+    margin-right: $m-l;
+    color: $c-gray;
+  }
+}

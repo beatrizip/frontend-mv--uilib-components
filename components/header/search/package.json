@@ -1,0 +1,22 @@
+{
+  "name": "@frontend-mv--uilib-components/sui-header-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepare": "npm run build:js && npm run build:styles",
+    "build:js": "babel --presets sui ./src --out-dir ./lib",
+    "build:styles": "cpx './src/**/*.scss' ./lib"
+  },
+  "peerDependencies": {
+    "@s-ui/theme": "8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@s-ui/react-atom-input": "5",
+    "@s-ui/react-atom-button": "1",
+    "@s-ui/react-atom-icon": "1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@frontend-mv--uilib-components/sui-content-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepare": "npm run build:js && npm run build:styles",
+    "build:js": "babel --presets sui ./src --out-dir ./lib",
+    "build:styles": "cpx './src/**/*.scss' ./lib"
+  },
+  "peerDependencies": {
+    "@s-ui/theme": "8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@s-ui/react-atom-badge": "1",
+    "@s-ui/react-atom-card": "1",
+    "@s-ui/react-atom-image": "2",
+    "@s-ui/react-atom-spinner": "1",
+    "@s-ui/react-atom-icon": "1",
+    "@s-ui/documentation-library": "1"
+  }
+}
