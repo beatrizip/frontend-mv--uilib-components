@@ -33,7 +33,7 @@ export default function MoviePoster({path}) {
   return (
     <div className="mv-MoviePoster">
       <AtomImage
-        src={`https://image.tmdb.org/t/p/w500${path}`}
+        src={path}
         errorText="Not found image"
         errorIcon={<ImageNotFoundIcon />}
       />

@@ -6,7 +6,6 @@ import MoviePoster from '../../poster/src'
 const CLASS_BASE = 'mv-Detail'
 
 export default function Detail({movie}) {
-  // import PropTypes from 'prop-types'
   return (
     <div className={CLASS_BASE}>
       <h1 className={`${CLASS_BASE}-title`}>{movie.title}</h1>
@@ -58,5 +57,5 @@ export default function Detail({movie}) {
 
 Detail.displayName = 'Detail'
 Detail.propTypes = {
-  movie: PropTypes.node.isRequired
+  movie: PropTypes.object
 }

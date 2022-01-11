@@ -3,21 +3,19 @@ import Card from 'components/content/card/src'
 import MoviePoster from '../../../movie/poster/src'
 
 const RESPONSE = {
-  poster_path: '/cezWGskPY5x7GaglTTRN4Fugfb8.jpg',
-  adult: false,
+  id: 634649,
+  title: 'Spider-Man: No Way Home',
+  rating: 8.7,
+  genres: [
+    {id: 28, name: 'Action'},
+    {id: 12, name: 'Adventure'},
+    {id: 878, name: 'Science Fiction'}
+  ],
+  voteCount: 1490,
   overview:
-    'When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!',
-  release_date: '2012-04-25',
-  genre_ids: [878, 28, 12],
-  id: 24428,
-  original_title: 'The Avengers',
-  original_language: 'en',
-  title: 'The Avengers',
-  backdrop_path: '/hbn46fQaRmlpBuUrEiFqv0GDL6Y.jpg',
-  popularity: 7.353212,
-  vote_count: 8503,
-  video: false,
-  vote_average: 7.33
+    'Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.',
+  poster: `https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg`,
+  homepage: 'https://www.spidermannowayhome.movie'
 }
 
 const Content = ({title, text}) => {
@@ -36,7 +34,7 @@ Content.propTypes = {
 
 export default () => (
   <Card
-    media={<MoviePoster path={Response.poster_path} />}
+    media={<MoviePoster path={RESPONSE.poster} />}
     content={<Content title={RESPONSE.title} text={RESPONSE.overview} />}
   />
 )
